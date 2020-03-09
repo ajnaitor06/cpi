@@ -1,0 +1,130 @@
+*{
+    font-family: "Oxanium", "Roboto", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  text-align: center;
+  display: none;
+  color: white;
+  background-color: black;
+  width: 100%;
+  z-index:0;
+}
+@media only screen and (max-width: 600px) {
+  #menu-trigger {
+    width: 100%;
+  }
+  #title {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    background-color: transparent;
+    width: 100%;
+    z-index: 9;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #title {
+    width: 50%;
+  }
+
+  #menu-trigger {
+    width: 10%;
+  }
+}
+
+body {
+  background-image: url(https://thirteen05.com/wp-content/uploads/2016/12/StockSnap_TIV258VG3N.jpg);
+  background-size: stretch;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  width: 0%;
+  height: 100%;
+  z-index: 10;
+}
+
+#menu-trigger {
+  position: fixed;
+  height: 10%;
+  top: 0%;
+  right: 0%;
+  border: solid white;
+  font-size: 20px;
+  background-color: black;
+  color: #00ff00;
+}
+
+#menu-trigger:hover {
+  animation-name: buttonHover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.menu-buttons {
+  position: absolute;
+  width: 100%;
+  height: calc(100% / 7);
+  border: solid white;
+  font-size: 20px;
+  background-color: black;
+  color: #00ff00;
+}
+
+.menu-buttons:hover {
+  animation-name: buttonHover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#m1 {
+  top: calc(100% / 7);
+}
+#m2 {
+  top: calc(100% / 7 * 2);
+}
+#m3 {
+  top: calc(100% / 7 * 3);
+}
+#m4 {
+  top: calc(100% / 7 * 4);
+}
+#m5 {
+  top: calc(100% / 7 * 5);
+}
+#m6 {
+  top: calc(100% / 7 * 6);
+}
+
+@keyframes buttonHover {
+  0% {
+    border-color: white;
+    background-color: black;
+    color: #00ff00;
+  }
+  50% {
+    color: #00ff00;
+    background-color: #999999;
+    border-color: black;
+  }
+  100% {
+    border-color: white;
+    background-color: black;
+    color: #00ff00;
+  }
+}
+
+#title {
+  background-color: black;
+  color: #00ff00;
+  text-align: center;
+  margin: auto;
+  font-size: 60px;
+}
