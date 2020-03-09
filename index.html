@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Computer programing info</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxanium&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="title">Computer Programing</div>
+    <button id="menu-trigger" onclick="menuOpen();">Menu</button>
+    <div id="menu">
+      <button class="menu-buttons" onclick="menuClose(); pageChange(1)" id="m1">
+        Requirements
+      </button>
+      <button class="menu-buttons" onclick="menuClose(); pageChange(2)" id="m2">
+        Job description
+      </button>
+      <button class="menu-buttons" onclick="menuClose(); pageChange(3)" id="m3">
+        Why it's important
+      </button>
+      <button class="menu-buttons" onclick="menuClose(); pageChange(4)" id="m4">
+        How to start
+      </button>
+      <button class="menu-buttons" onclick="menuClose(); pageChange(5)" id="m5">
+        Who does it affect
+      </button>
+      <button class="menu-buttons" onclick="menuClose(); pageChange(6)" id="m6">
+        Why I choose this career
+      </button>
+      <button class="menu-buttons" onclick="menuClose();" id="menuClose">
+        Cancel
+      </button>
+    </div>
+    <div id="info">
+      <p id="p1" class="para">1111111111<br />This is page one<br />1111111111<br><br><br><br><br><br>1</p>
+      <p id="p2" class="para">2222222222<br />This is page two<br />2222222222<br><br><br><br><br>2</p>
+      <p id="p3" class="para">3333333333<br />This is page three<br />3333333333<br><br><br><br>3</p>
+      <p id="p4" class="para">4444444444<br />This is page four<br />4444444444<br><br><br>4</p>
+      <p id="p5" class="para">5555555555<br />This is page five<br />5555555555<br><br>5</p>
+      <p id="p6" class="para">6666666666<br />This is page six<br />6666666666<br>6</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
